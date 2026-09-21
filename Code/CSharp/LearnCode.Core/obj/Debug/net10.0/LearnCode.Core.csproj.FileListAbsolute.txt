@@ -9,3 +9,4 @@
 /Users/orvinjedalava/Github/jed_HelloInterview/Code/CSharp/LearnCode.Core/obj/Debug/net10.0/refint/LearnCode.Core.dll
 /Users/orvinjedalava/Github/jed_HelloInterview/Code/CSharp/LearnCode.Core/obj/Debug/net10.0/LearnCode.Core.pdb
 /Users/orvinjedalava/Github/jed_HelloInterview/Code/CSharp/LearnCode.Core/obj/Debug/net10.0/ref/LearnCode.Core.dll
+/Users/orvinjedalava/Github/jed_HelloInterview/Code/CSharp/LearnCode.Core/obj/Debug/net10.0/LearnCode.Core.sourcelink.json

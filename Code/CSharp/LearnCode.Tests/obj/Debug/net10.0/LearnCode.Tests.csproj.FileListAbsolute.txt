@@ -97,3 +97,4 @@
 /Users/orvinjedalava/Github/jed_HelloInterview/Code/CSharp/LearnCode.Tests/bin/Debug/net10.0/CoverletSourceRootsMapping_LearnCode.Tests
 /Users/orvinjedalava/Github/jed_HelloInterview/Code/CSharp/LearnCode.Tests/bin/Debug/net10.0/LearnCode.Core.dll
 /Users/orvinjedalava/Github/jed_HelloInterview/Code/CSharp/LearnCode.Tests/bin/Debug/net10.0/LearnCode.Core.pdb
+/Users/orvinjedalava/Github/jed_HelloInterview/Code/CSharp/LearnCode.Tests/obj/Debug/net10.0/LearnCode.Tests.sourcelink.json
