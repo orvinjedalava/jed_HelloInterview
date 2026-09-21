@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LearnCode.Core/LearnCode.Core.csproj" />
+  <Project Path="LearnCode.Tests/LearnCode.Tests.csproj" />
+</Solution>
