@@ -22,35 +22,45 @@ public class ThreeSum
 {
     public List<(int, int, int)> Invoke(int[] input)
     {
+        // Sort array to enable two-pointer technique and handle duplicates
         Array.Sort(input);
         
         List<(int,int,int)> results = new List<(int, int, int)>();
 
+        // Fix one element and find two others that sum to its negation
         for(int i = 0; i <= input.Length - 2; i++)
         {
-            if (i < 0 && input[i] == input[i - 1])
+            // Skip duplicate values for the first element to avoid duplicate triplets
+            if (i > 0 && input[i] == input[i - 1])
                 continue;
 
+            // Initialize left and right pointers
             int leftIndex = i + 1;
             int rightIndex = input.Length - 1;
             
+             // Two-pointer search for pairs that sum to input[i].
+             // input[i], input[leftIndex], and input[rightIndex] should total 0
             while(leftIndex < rightIndex)
             {
                 int total = input[i] + input[leftIndex] + input[rightIndex];
 
                 if (total < 0)
-                    leftIndex++;
+                    leftIndex++; // Sum too small, move left pointer right
                 else if (total > 0)
-                    rightIndex--;
+                    rightIndex--; // Sum too large, move right pointer left
                 else
                 {
+                    // Found a valid triplet
                     results.Add((input[i], input[leftIndex], input[rightIndex]));
 
+                    // Skip duplicate values for left pointer
                     while(leftIndex < rightIndex && input[leftIndex] == input[leftIndex + 1])
                         leftIndex++;
+                    // Skip duplicate values for right pointer
                     while(leftIndex < rightIndex && input[rightIndex] == input[rightIndex - 1])
                         rightIndex--;
                     
+                    // Move both pointers to continue searching for possible combinations
                     leftIndex++;
                     rightIndex--;
                 }
