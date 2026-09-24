@@ -2,7 +2,7 @@ using LearnCode.Core.SlidingWindow;
 
 public class MaxPointsFromCardsTests
 {
-    private MaxPointsFromCards _service = null;
+    private MaxPointsFromCards _service;
 
     public MaxPointsFromCardsTests()
     {
