@@ -1,6 +1,6 @@
 using LearnCode.Core.TwoPointers;
 
-namespace LearnCode.Tests.TwoPointer;
+namespace LearnCode.Tests.TwoPointers;
 
 public class ThreeSumTests
 {
