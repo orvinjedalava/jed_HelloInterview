@@ -1,5 +1,18 @@
 namespace LearnCode.Core.TwoPointers;
 
+/*
+
+Write a function to calculate the total amount of water trapped between bars on an elevation map, where each bar's width is 1. The input is given as an array of n non-negative integers height representing the height of each bar.
+
+Example:
+
+height = [3, 4, 1, 2, 2, 5, 1, 0, 2]
+Output:
+
+10
+
+*/
+
 public class TrappingWater
 {
     public int Invoke(int[] nums)
