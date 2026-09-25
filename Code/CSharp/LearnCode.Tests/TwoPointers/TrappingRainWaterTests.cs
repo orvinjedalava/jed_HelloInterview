@@ -2,13 +2,13 @@ using LearnCode.Core.TwoPointers;
 
 namespace LearnCode.Tests.TwoPointers;
 
-public class TrappingWaterTests
+public class TrappingRainWaterTests
 {
-    private TrappingWater _service;
+    private TrappingRainWater _service;
 
-    public TrappingWaterTests()
+    public TrappingRainWaterTests()
     {
-        _service = new TrappingWater();
+        _service = new TrappingRainWater();
     }
 
     [Theory]

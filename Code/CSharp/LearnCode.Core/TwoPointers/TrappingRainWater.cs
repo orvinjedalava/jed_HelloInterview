@@ -13,7 +13,7 @@ Output:
 
 */
 
-public class TrappingWater
+public class TrappingRainWater
 {
     public int Invoke(int[] nums)
     {
