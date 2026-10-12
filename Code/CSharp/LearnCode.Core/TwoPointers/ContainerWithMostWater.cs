@@ -25,23 +25,33 @@ public class ContainerWithMostWater
 {
     public int Invoke(int[] heights)
     {
+        // Initialize two pointers: one at the start, one at the end (widest container)
         int leftIndex = 0;
         int rightIndex = heights.Length - 1;
+        // Track the maximum area found so far
         int maxArea = 0;
 
+        // Use two-pointer approach: start wide and move inward
         while(leftIndex < rightIndex)
         {
+            // Width is the distance between the two pointers
             int width = rightIndex - leftIndex;
+            // Height is limited by the shorter wall (water would overflow at the shorter wall)
             int height = int.Min(heights[leftIndex], heights[rightIndex]);
 
+            // Calculate area for the current container
             int currentArea = width * height;
 
+            // Update maxArea if current area is larger
             maxArea = int.Max(currentArea, maxArea);
 
+            // Greedy strategy: move the pointer with the shorter height inward
+            // This is because moving the taller pointer would only decrease area (width decreases,
+            // and height can't increase since it's bounded by the shorter wall)
             if (heights[leftIndex] < heights[rightIndex])
-                leftIndex++;
+                leftIndex++;  // Move left pointer right
             else
-                rightIndex--;
+                rightIndex--;  // Move right pointer left
         }
 
         return maxArea;
