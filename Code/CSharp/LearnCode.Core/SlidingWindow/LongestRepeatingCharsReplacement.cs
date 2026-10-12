@@ -15,9 +15,10 @@ Input:
 
 s = "BBABCCDD"
 k = 2
-Output:
 
+Output:
 5
+
 Explanation: 
 Replace the 'A' and the first 'C' with 'B' to form "BBBBBCDD". 
 That uses 2 operations, one for each character changed. 
