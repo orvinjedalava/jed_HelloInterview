@@ -13,6 +13,8 @@ public class LongestRepeatingCharsReplacementTests
 
     [Theory]
     [InlineData("BBABCCDD", 2, 5)]
+    [InlineData("AAAABBBB", 2, 6)]
+    [InlineData("ABCBE", 3, 5)]
     public void Invoke_Success(string s, int k, int expectedResult)
     {
         var result = _service.Invoke(s, k);
