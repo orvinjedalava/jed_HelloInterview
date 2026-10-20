@@ -11,12 +11,11 @@ public class CanAttendMeetingsTests
         _service = new CanAttendMeetings();
     }
 
-    public static IEnumerable<object[]> TestCases = 
-        new List<object[]>
-        {
-            new object[] { new int[][] {  new int[] {1,5}, new int[] {3,9}, new int[] {6,8}}, false},
-            new object[] { new int[][] { new int[] {10,11}, new int[] {6, 10}, new int[] {1,5}} , true}
-        };
+    public static readonly IEnumerable<object[]> TestCases = 
+        [
+            [new int[][] { [1,5], [3,9], [6,8]}, false],
+            [new int[][] { [10,11], [6, 10], [1,5]} , true]
+        ];
 
     [Theory]
     [MemberData(nameof(TestCases))]
