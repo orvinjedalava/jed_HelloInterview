@@ -44,7 +44,7 @@ public class TriangleNumbers
         // Sort array to enable two-pointer technique
         Array.Sort(nums);
 
-        // Fix one element and find two others that ha sum greater than the fixed element
+        // Fix one element and find two others that have sum greater than the fixed element
         for (int i = nums.Length - 1; i >= 2; i--)
         {
             int left = 0;
